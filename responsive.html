@@ -44,7 +44,7 @@ Description : Responsive Layouts.
 		img { max-width: 100%; height: auto; }  /* Fluid Images */
         .container { width: 100%;}
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; }        
-        .main { padding: 15px; margin-left: 150px; margin-bottom: 60px;}		
+        .main { padding: 15px; margin-left: 150px;}		
         .footer { position: fixed; bottom: 0; width: 100%;}
         .news-item { padding: 10px; }
 		
@@ -68,7 +68,9 @@ Description : Responsive Layouts.
 		.gap {
 			/*I need some CSS codes.*/
            /* height: 100px;  Adjust this value based on the desired gap */
-           clear:both;
+           clear: both;
+           height: 55px;
+           width: 100%;
 		}
 
 		@media screen and (min-width: 769px) {		  /* desktop */
@@ -91,6 +93,10 @@ Description : Responsive Layouts.
 
         @media screen and (max-width: 768px) {      /* tablet */
             /*I need some CSS codes.*/
+            .main{
+                margin-left: 0px    
+            }
+            
             .menu {
                 width: 100%;
                 float: none;
@@ -108,6 +114,15 @@ Description : Responsive Layouts.
 
         @media screen and (max-width: 480px) {      /* phone */
 			/*I need some CSS codes.*/  
+            .main{
+                margin-left: 0px    
+            }
+            .large, .medium, .small {
+            width: 100%;
+            float: none;
+            box-sizing: border-box;
+		}
+
             .menu {
                 width: 100%;
                 float: none;
@@ -116,6 +131,7 @@ Description : Responsive Layouts.
             .h1{
                 font-size: 18px;
             }
+            
         }
 
         
@@ -174,15 +190,15 @@ Description : Responsive Layouts.
 				<!-- Medium news item -->
 				<div class="medium news-item">
 					<header>
-						<h1>Mahdi Ansari Takes a Historic Spacewalk Near the ISS</h1>
+						<h1>Stephenie Oboh  Takes a Historic Spacewalk Near the ISS</h1>
 					</header>
 					<img src="images/medium.jpg" alt="Medium Image">
 					<article>
 						<h2>A Historic Moment in Space Exploration</h2>
-						<p>In an unprecedented feat of human courage and technological prowess, astronaut Mahdi Ansari completed a spacewalk near the International Space Station (ISS), marking a new milestone in space exploration.</p>
+						<p>In an unprecedented feat of human courage and technological prowess, astronaut Stephenie Oboh completed a spacewalk near the International Space Station (ISS), marking a new milestone in space exploration.</p>
 
 						<h3>A Breathtaking Journey</h3>
-						<p>Ansari, aboard the spacecraft Voyager X, ventured out into the void of space, capturing breathtaking views of Earth and conducting important research that could pave the way for future interstellar travel.</p>
+						<p>Oboh, aboard the spacecraft Voyager X, ventured out into the void of space, capturing breathtaking views of Earth and conducting important research that could pave the way for future interstellar travel.</p>
 
 						<h3>Pushing the Boundaries of Science</h3>
 						<p>The successful spacewalk not only demonstrates human resilience but also advances our understanding of space and our capabilities to explore further into the unknown.</p>
