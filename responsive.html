@@ -44,7 +44,7 @@ Description : Responsive Layouts.
 		img { max-width: 100%; height: auto; }  /* Fluid Images */
         .container { width: 100%;}
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; }        
-        .main { padding: 15px; margin-left: 150px;}		
+        .main { padding: 15px; margin-left: 150px; margin-bottom: 60px;}		
         .footer { position: fixed; bottom: 0; width: 100%;}
         .news-item { padding: 10px; }
 		
@@ -53,31 +53,38 @@ Description : Responsive Layouts.
 
 		.row { 
 			/*I need some CSS codes.*/
-            clear: both; /* Clear the floats to ensure proper layout */
-            margin-bottom: 20px; /* Add some margin between rows */		
+            /*clear: both;  Clear the floats to ensure proper layout */
+            /*margin-bottom: 20px;  Add some margin between rows */		
 		}
 
 		.large, .medium, .small {
 			/*I need some CSS codes.*/
-            margin-bottom: 20px; /* Add some margin between news items */
+            /*margin-bottom: 20px;  Add some margin between news items */
+            width: 100%;
+            float: left;
+            box-sizing: border-box;
 		}
 		
 		.gap {
 			/*I need some CSS codes.*/
-            height: 100px; /* Adjust this value based on the desired gap */
+           /* height: 100px;  Adjust this value based on the desired gap */
+           clear:both;
 		}
 
 		@media screen and (min-width: 769px) {		  /* desktop */
 			.large { 
 				/*I need some CSS codes.*/
+                width: 100%;
 
 			}
 			.medium { 
 				/*I need some CSS codes.*/
+                width: 70%;
 
 			}
 			.small { 
 				/*I need some CSS codes.*/
+                width: 30%;
 
 			}
 		}
@@ -88,6 +95,15 @@ Description : Responsive Layouts.
                 width: 100%;
                 float: none;
             }
+
+            .medium{
+                width: 60%;
+            }
+
+            .small{
+                width: 40%;
+            }
+            
         }
 
         @media screen and (max-width: 480px) {      /* phone */
@@ -95,6 +111,10 @@ Description : Responsive Layouts.
             .menu {
                 width: 100%;
                 float: none;
+            }
+
+            .h1{
+                font-size: 18px;
             }
         }
 
