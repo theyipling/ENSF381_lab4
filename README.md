@@ -1,4 +1,3 @@
-
 # Project Overview
 - In this project, we make a webpage cross compatible between different screen sizes using responsive web design methods.
 
@@ -9,8 +8,6 @@
 | Stephenie Oboh  |
 
 ## Screenshots
-
-
 ### Exercise B
 ![Exercise B final output](ExerciseB.gif)
 
