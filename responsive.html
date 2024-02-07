@@ -22,7 +22,7 @@ Description : Responsive Layouts.
 
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
-		div {
+		/* div {
 			border: 1px dashed gray;	
 		}
 		.row{ 
@@ -36,64 +36,57 @@ Description : Responsive Layouts.
 		}
 		.small {
 			border: 1px solid yellow;	
-		}		
+		}		 */
 	</style>
 
     <style>
 		body { margin: 0; padding: 0;}
-		img { max-width: 100%; height: auto; }  /* Fluid Images */
+		img { max-width: 100%; height: auto; } 
         .container { width: 100%;}
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; }        
         .main { padding: 15px; margin-left: 150px;}		
         .footer { position: fixed; bottom: 0; width: 100%;}
         .news-item { padding: 10px; }
-		
-        /* Remove temporary borders */
-        /* div, img { border: none; } */
 
 		.row { 
 			/*I need some CSS codes.*/
-            /*clear: both;  Clear the floats to ensure proper layout */
-            /*margin-bottom: 20px;  Add some margin between rows */		
+            display: block;
+            box-sizing: border-box;	
 		}
 
 		.large, .medium, .small {
 			/*I need some CSS codes.*/
-            /*margin-bottom: 20px;  Add some margin between news items */
-            width: 100%;
             float: left;
             box-sizing: border-box;
 		}
 		
 		.gap {
 			/*I need some CSS codes.*/
-           /* height: 100px;  Adjust this value based on the desired gap */
            clear: both;
            height: 55px;
-           width: 100%;
 		}
 
-		@media screen and (min-width: 769px) {		  /* desktop */
+        /* desktop */
+		@media screen and (min-width: 769px) {		  
 			.large { 
 				/*I need some CSS codes.*/
                 width: 100%;
-
 			}
 			.medium { 
 				/*I need some CSS codes.*/
                 width: 70%;
-
 			}
 			.small { 
 				/*I need some CSS codes.*/
                 width: 30%;
-
 			}
 		}
 
-        @media screen and (max-width: 768px) {      /* tablet */
+        /* tablet */
+        @media screen and (max-width: 768px) {      
             /*I need some CSS codes.*/
             .main{
+                width: 100%;
                 margin-left: 0px    
             }
             
@@ -108,20 +101,20 @@ Description : Responsive Layouts.
 
             .small{
                 width: 40%;
-            }
-            
+            }  
         }
-
-        @media screen and (max-width: 480px) {      /* phone */
+        
+        /* phone */
+        @media screen and (max-width: 480px) {      
 			/*I need some CSS codes.*/  
             .main{
-                margin-left: 0px    
+                margin-left: 0px;    
             }
+
             .large, .medium, .small {
             width: 100%;
             float: none;
-            box-sizing: border-box;
-		}
+		    }
 
             .menu {
                 width: 100%;
@@ -131,7 +124,6 @@ Description : Responsive Layouts.
             .h1{
                 font-size: 18px;
             }
-            
         }
 
         
