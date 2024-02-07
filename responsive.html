@@ -1,9 +1,9 @@
 <!--
 =========================================================
-Name        : index.html
+Name        : responsive.html
 Assignment  : Lab 4 Exercise B
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Sarah Yip, Stephenie Oboh
+Submission  : February 7, 2024
 Description : Responsive Layouts.
 =========================================================
 -->
@@ -18,6 +18,7 @@ Description : Responsive Layouts.
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- First, link the menu.css file here -->
+     <link rel="stylesheet" type="text/css" href="menu.css">
 
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
@@ -40,43 +41,61 @@ Description : Responsive Layouts.
 
     <style>
 		body { margin: 0; padding: 0;}
-		img { max-width: 100%; height: auto; }
+		img { max-width: 100%; height: auto; }  /* Fluid Images */
         .container { width: 100%;}
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; }        
         .main { padding: 15px; margin-left: 150px;}		
         .footer { position: fixed; bottom: 0; width: 100%;}
         .news-item { padding: 10px; }
 		
+        /* Remove temporary borders */
+        /* div, img { border: none; } */
+
 		.row { 
-			/*I need some CSS codes.*/		
+			/*I need some CSS codes.*/
+            clear: both; /* Clear the floats to ensure proper layout */
+            margin-bottom: 20px; /* Add some margin between rows */		
 		}
 
 		.large, .medium, .small {
 			/*I need some CSS codes.*/
+            margin-bottom: 20px; /* Add some margin between news items */
 		}
 		
 		.gap {
 			/*I need some CSS codes.*/
+            height: 100px; /* Adjust this value based on the desired gap */
 		}
 
-		@media screen and (min-width: 769px) {			
+		@media screen and (min-width: 769px) {		  /* desktop */
 			.large { 
 				/*I need some CSS codes.*/
+
 			}
 			.medium { 
 				/*I need some CSS codes.*/
+
 			}
 			.small { 
 				/*I need some CSS codes.*/
-			 }
+
+			}
 		}
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) {      /* tablet */
             /*I need some CSS codes.*/
+            .menu {
+                width: 100%;
+                float: none;
+            }
         }
 
-        @media screen and (max-width: 480px) {
-			/*I need some CSS codes.*/
+        @media screen and (max-width: 480px) {      /* phone */
+			/*I need some CSS codes.*/  
+            .menu {
+                width: 100%;
+                float: none;
+            }
         }
 
         
